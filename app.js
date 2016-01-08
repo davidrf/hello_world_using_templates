@@ -7,7 +7,7 @@ app.set('view engine', 'html');
 app.set('views', __dirname + '/views');
 
 app.get('/', function(req, res) {
-  res.send('Hellow World');
+  res.render('hello', { 'name': 'Templates'});
 });
 
 app.use(function(req, res) {
